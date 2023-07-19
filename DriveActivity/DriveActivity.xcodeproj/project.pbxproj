@@ -1,0 +1,544 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B984080E2A6715BB00D54D9F /* DriveActivityApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B984080D2A6715BB00D54D9F /* DriveActivityApp.swift */; };
+		B98408102A6715BB00D54D9F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B984080F2A6715BB00D54D9F /* ContentView.swift */; };
+		B98408122A6715BC00D54D9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B98408112A6715BC00D54D9F /* Assets.xcassets */; };
+		B98408152A6715BC00D54D9F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B98408142A6715BC00D54D9F /* Preview Assets.xcassets */; };
+		B98408742A67201800D54D9F /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B98408232A671DEA00D54D9F /* WidgetKit.framework */; };
+		B98408752A67201800D54D9F /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B98408252A671DEA00D54D9F /* SwiftUI.framework */; };
+		B984087A2A67201800D54D9F /* BookACabLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98408792A67201800D54D9F /* BookACabLiveActivity.swift */; };
+		B984087E2A67201900D54D9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B984087D2A67201900D54D9F /* Assets.xcassets */; };
+		B98408822A67201900D54D9F /* BookACabExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = B98408732A67201800D54D9F /* BookACabExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B98408872A67204100D54D9F /* ActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98408862A67204100D54D9F /* ActivityAttributes.swift */; };
+		B98408882A67204100D54D9F /* ActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98408862A67204100D54D9F /* ActivityAttributes.swift */; };
+		B9D14CC12A6809BB00463C46 /* LAManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D14CC02A6809BB00463C46 /* LAManager.swift */; };
+		B9D14CC22A6809BB00463C46 /* LAManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D14CC02A6809BB00463C46 /* LAManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B98408802A67201900D54D9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B98408022A6715BB00D54D9F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B98408722A67201800D54D9F;
+			remoteInfo = BookACabExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B984083A2A671DEB00D54D9F /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B98408822A67201900D54D9F /* BookACabExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B984080A2A6715BB00D54D9F /* DriveActivity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DriveActivity.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B984080D2A6715BB00D54D9F /* DriveActivityApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriveActivityApp.swift; sourceTree = "<group>"; };
+		B984080F2A6715BB00D54D9F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B98408112A6715BC00D54D9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B98408142A6715BC00D54D9F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B98408232A671DEA00D54D9F /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		B98408252A671DEA00D54D9F /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		B98408732A67201800D54D9F /* BookACabExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BookACabExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		B98408792A67201800D54D9F /* BookACabLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookACabLiveActivity.swift; sourceTree = "<group>"; };
+		B984087D2A67201900D54D9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B984087F2A67201900D54D9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B98408862A67204100D54D9F /* ActivityAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityAttributes.swift; sourceTree = "<group>"; };
+		B9D14CBF2A67F59000463C46 /* DriveActivity.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DriveActivity.entitlements; sourceTree = "<group>"; };
+		B9D14CC02A6809BB00463C46 /* LAManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LAManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B98408072A6715BB00D54D9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B98408702A67201800D54D9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B98408752A67201800D54D9F /* SwiftUI.framework in Frameworks */,
+				B98408742A67201800D54D9F /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B98408012A6715BB00D54D9F = {
+			isa = PBXGroup;
+			children = (
+				B984080C2A6715BB00D54D9F /* DriveActivity */,
+				B98408762A67201800D54D9F /* BookACab */,
+				B98408222A671DEA00D54D9F /* Frameworks */,
+				B984080B2A6715BB00D54D9F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B984080B2A6715BB00D54D9F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B984080A2A6715BB00D54D9F /* DriveActivity.app */,
+				B98408732A67201800D54D9F /* BookACabExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B984080C2A6715BB00D54D9F /* DriveActivity */ = {
+			isa = PBXGroup;
+			children = (
+				B9D14CBF2A67F59000463C46 /* DriveActivity.entitlements */,
+				B984080D2A6715BB00D54D9F /* DriveActivityApp.swift */,
+				B984080F2A6715BB00D54D9F /* ContentView.swift */,
+				B98408862A67204100D54D9F /* ActivityAttributes.swift */,
+				B9D14CC02A6809BB00463C46 /* LAManager.swift */,
+				B98408112A6715BC00D54D9F /* Assets.xcassets */,
+				B98408132A6715BC00D54D9F /* Preview Content */,
+			);
+			path = DriveActivity;
+			sourceTree = "<group>";
+		};
+		B98408132A6715BC00D54D9F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B98408142A6715BC00D54D9F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B98408222A671DEA00D54D9F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B98408232A671DEA00D54D9F /* WidgetKit.framework */,
+				B98408252A671DEA00D54D9F /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B98408762A67201800D54D9F /* BookACab */ = {
+			isa = PBXGroup;
+			children = (
+				B98408792A67201800D54D9F /* BookACabLiveActivity.swift */,
+				B984087D2A67201900D54D9F /* Assets.xcassets */,
+				B984087F2A67201900D54D9F /* Info.plist */,
+			);
+			path = BookACab;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B98408092A6715BB00D54D9F /* DriveActivity */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B98408182A6715BC00D54D9F /* Build configuration list for PBXNativeTarget "DriveActivity" */;
+			buildPhases = (
+				B98408062A6715BB00D54D9F /* Sources */,
+				B98408072A6715BB00D54D9F /* Frameworks */,
+				B98408082A6715BB00D54D9F /* Resources */,
+				B984083A2A671DEB00D54D9F /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B98408812A67201900D54D9F /* PBXTargetDependency */,
+			);
+			name = DriveActivity;
+			productName = DriveActivity;
+			productReference = B984080A2A6715BB00D54D9F /* DriveActivity.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B98408722A67201800D54D9F /* BookACabExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B98408832A67201900D54D9F /* Build configuration list for PBXNativeTarget "BookACabExtension" */;
+			buildPhases = (
+				B984086F2A67201800D54D9F /* Sources */,
+				B98408702A67201800D54D9F /* Frameworks */,
+				B98408712A67201800D54D9F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BookACabExtension;
+			productName = BookACabExtension;
+			productReference = B98408732A67201800D54D9F /* BookACabExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B98408022A6715BB00D54D9F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					B98408092A6715BB00D54D9F = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					B98408722A67201800D54D9F = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = B98408052A6715BB00D54D9F /* Build configuration list for PBXProject "DriveActivity" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B98408012A6715BB00D54D9F;
+			productRefGroup = B984080B2A6715BB00D54D9F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B98408092A6715BB00D54D9F /* DriveActivity */,
+				B98408722A67201800D54D9F /* BookACabExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B98408082A6715BB00D54D9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B98408152A6715BC00D54D9F /* Preview Assets.xcassets in Resources */,
+				B98408122A6715BC00D54D9F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B98408712A67201800D54D9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B984087E2A67201900D54D9F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B98408062A6715BB00D54D9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B98408102A6715BB00D54D9F /* ContentView.swift in Sources */,
+				B984080E2A6715BB00D54D9F /* DriveActivityApp.swift in Sources */,
+				B9D14CC12A6809BB00463C46 /* LAManager.swift in Sources */,
+				B98408872A67204100D54D9F /* ActivityAttributes.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B984086F2A67201800D54D9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B984087A2A67201800D54D9F /* BookACabLiveActivity.swift in Sources */,
+				B9D14CC22A6809BB00463C46 /* LAManager.swift in Sources */,
+				B98408882A67204100D54D9F /* ActivityAttributes.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B98408812A67201900D54D9F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B98408722A67201800D54D9F /* BookACabExtension */;
+			targetProxy = B98408802A67201900D54D9F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B98408162A6715BC00D54D9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B98408172A6715BC00D54D9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B98408192A6715BC00D54D9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DriveActivity/DriveActivity.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DriveActivity/Preview Content\"";
+				DEVELOPMENT_TEAM = Q5V66LAW38;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.succcessive.mydemo.DriveActivity;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B984081A2A6715BC00D54D9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DriveActivity/DriveActivity.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DriveActivity/Preview Content\"";
+				DEVELOPMENT_TEAM = Q5V66LAW38;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.succcessive.mydemo.DriveActivity;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B98408842A67201900D54D9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q5V66LAW38;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BookACab/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BookACab;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.succcessive.mydemo.DriveActivity.BookACab;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B98408852A67201900D54D9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q5V66LAW38;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BookACab/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BookACab;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.succcessive.mydemo.DriveActivity.BookACab;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B98408052A6715BB00D54D9F /* Build configuration list for PBXProject "DriveActivity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B98408162A6715BC00D54D9F /* Debug */,
+				B98408172A6715BC00D54D9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B98408182A6715BC00D54D9F /* Build configuration list for PBXNativeTarget "DriveActivity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B98408192A6715BC00D54D9F /* Debug */,
+				B984081A2A6715BC00D54D9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B98408832A67201900D54D9F /* Build configuration list for PBXNativeTarget "BookACabExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B98408842A67201900D54D9F /* Debug */,
+				B98408852A67201900D54D9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B98408022A6715BB00D54D9F /* Project object */;
+}
