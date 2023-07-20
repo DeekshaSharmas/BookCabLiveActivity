@@ -26,7 +26,7 @@ struct BookedCabActivity: Widget {
                             Text("\(context.state.driverName) is on the way!")
                                 .font(.headline)
                             Spacer()
-                            Text("\(context.attributes.vechileNumber)")
+                            Text("\(context.state.vechileNumber)")
                                 .font(.title)
                                 .bold()
                         }
@@ -61,7 +61,7 @@ struct BookedCabActivity: Widget {
         } dynamicIsland: { context in
             DynamicIsland {
                 DynamicIslandExpandedRegion(.leading) {
-                    Label("\(context.attributes.vechileNumber) ", systemImage: "car")
+                    Label("\(context.state.vechileNumber) ", systemImage: "car")
                         .font(.headline)
                 }
                 DynamicIslandExpandedRegion(.trailing) {
@@ -84,7 +84,7 @@ struct BookedCabActivity: Widget {
                 }
                 DynamicIslandExpandedRegion(.bottom) {
                     HStack(spacing:10) {
-                        Link(destination: URL(string: "tel:8005551212")!) {
+                        Link(destination: URL(string: "tel:0000000000")!) {
                                                      Label("Contact driver", systemImage: "phone.circle.fill").padding()
                                                  }.background(Color.accentColor)
                             .clipShape(RoundedRectangle(cornerRadius: 15)).font(.headline)
@@ -100,7 +100,7 @@ struct BookedCabActivity: Widget {
                 }
             } compactLeading: {
                 Label {
-                    Text("\(context.attributes.vechileNumber)")
+                    Text("\(context.state.vechileNumber)")
                 } icon: {
                     Image(systemName: "car")
                 }
@@ -129,8 +129,8 @@ struct BookedCabActivity: Widget {
 }
 @available(iOSApplicationExtension 16.2, *)
 struct BookACabLiveActivity_Previews: PreviewProvider {
-    static let attributes = BookCabAttributes(vechileNumber: "UP2436", totalAmount: "Rs. 450")
-    static let contentState = BookCabAttributes.ContentState(driverName: "Anmol", estimatedReachTime: Date()...Date().addingTimeInterval(15 * 60))
+    static let attributes = BookCabAttributes(customerName: "Deeksha", totalAmount: "Rs. 450")
+    static let contentState = BookCabAttributes.ContentState(driverName: "Anmol", vechileNumber: "UP2456", estimatedReachTime: Date()...Date().addingTimeInterval(15 * 60))
 
     static var previews: some View {
         attributes

@@ -11,12 +11,11 @@ import ActivityKit
 class LiveActivityManager {
     
     func startBookingCab() {
-        let orderCabAttributes = BookCabAttributes(vechileNumber: "UP2345", totalAmount: "Rs. 450")
+        let orderCabAttributes = BookCabAttributes(customerName: "Deeksha", totalAmount: "Rs. 450")
 
-        //let initialContentState = ActivityContent
-        let initialContentState = BookCabAttributes.cabArrivalStatus(driverName: "Anmol", estimatedReachTime: Date()...Date().addingTimeInterval(5 * 60))
+        let initialContentState = BookCabAttributes.ContentState(driverName: "Anmol", vechileNumber: "UP2345", estimatedReachTime: Date()...Date().addingTimeInterval(5 * 60))
         
-        let activity = ActivityContent(state: initialContentState, staleDate: .distantFuture)
+        let activity = ActivityContent(state: initialContentState, staleDate: .now)
                                                   
         do {
             let statusActivity = try Activity<BookCabAttributes>.request(
@@ -28,19 +27,21 @@ class LiveActivityManager {
             print("Error requesting a cab Live Activity \(error.localizedDescription)")
         }
     }
+    
     func updateCabStatus() {
         Task {
-            let updatedDeliveryStatus = BookCabAttributes.cabArrivalStatus(driverName: "Anmol", estimatedReachTime: Date()...Date().addingTimeInterval(20 * 60))
+            let updatedDeliveryStatus = BookCabAttributes.ContentState(driverName: "Anmol", vechileNumber: "UP2345", estimatedReachTime: Date()...Date().addingTimeInterval(20 * 60))
+            let activityState = ActivityContent(state: updatedDeliveryStatus, staleDate: .now)
             
             for activity in Activity<BookCabAttributes>.activities{
-                await activity.update(using: updatedDeliveryStatus)
+                await activity.update(activityState)
             }
         }
     }
     func CancelCab() {
         Task {
             for activity in Activity<BookCabAttributes>.activities{
-                await activity.end(dismissalPolicy: .immediate)
+                await activity.end(nil,dismissalPolicy:.immediate) // content state set to nil
             }
         }
     }

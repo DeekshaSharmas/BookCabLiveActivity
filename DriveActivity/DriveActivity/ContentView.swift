@@ -19,6 +19,7 @@ struct ContentView: View {
             .preferredColorScheme(.light)
         }
     }
+    
     var actionButtons: some View {
         VStack(spacing:10) {
             Spacer()

@@ -10,13 +10,14 @@ import SwiftUI
 import ActivityKit
 
 struct BookCabAttributes: ActivityAttributes {
-    public typealias cabArrivalStatus = ContentState
-
-    public struct ContentState: Codable, Hashable {
-        var driverName: String
-        var estimatedReachTime: ClosedRange<Date>
-    }
-
-    var vechileNumber: String
+    typealias ContentState = CabContentState
+    
+    var customerName: String
     var totalAmount: String
+}
+
+public struct CabContentState: Codable, Hashable {
+    var driverName: String
+    var vechileNumber: String
+    var estimatedReachTime: ClosedRange<Date>
 }
